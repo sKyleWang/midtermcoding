@@ -12,7 +12,7 @@ import org.junit.Test;
 
 import com.cisc181.eNums.eMajor;
 
-import sun.swing.SwingUtilities2.Section;
+
 
 public class Student_Test {
 	private static ArrayList<Course> CourseList = new ArrayList<Course>();
@@ -76,7 +76,7 @@ public class Student_Test {
 		{
 			for(Section section : SectionList) 
 			{
-				EnrollmentList.add(new Enrollment(student.getStudentID(), section.getSectionID));
+				EnrollmentList.add(new Enrollment(student.getStudentID(), section.getSectionID()));
 			}
 		}
 		for(Enrollment enrollment : EnrollmentList) 
@@ -128,6 +128,3 @@ public class Student_Test {
 		
 		}
 }
-
-
-
