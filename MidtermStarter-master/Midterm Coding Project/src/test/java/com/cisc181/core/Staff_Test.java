@@ -49,7 +49,7 @@ public class Staff_Test {
 			Staff wrongNumber = new Staff("Joseph","Jo","Joster", new Date(1920,9,27), "152 Courtney Street, Newark, DE, 19717", "(302)-998-2222" 
 					,"jo2@udel.edu", "3-5", 8, 20000.00, new Date(1987,3,14), eTitle.MR);
 		}
-		catch(PersonException e)
+		catch(Exception e)
 		{
 			thrown1 = true;
 		}
@@ -59,7 +59,7 @@ public class Staff_Test {
 			Staff wrongDOB = new Staff("Joseph","Jo","Joster", new Date(1990,7,25), "152 Courtney Street, Newark, DE, 19717", "(302)-123-1234" 
 					,"jo2@udel.edu", "3-5", 8, 20000.00, new Date(1987,3,14), eTitle.MR);
 		}
-		catch(PersonException e)
+		catch(Exception e)
 		{
 			thrown2 = true;
 		}
